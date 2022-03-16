@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<title> TRAVELERS IDENTITY FORM</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="main">
+        </div>
+        <ul>
+            <li class="active"><a href="index.html">BACK</a></li>
+        </ul>
+	<div class="container">
+		<div class="title">TRAVELERS IDENTITY</div>
+		<form action="#">
+			<div class="user-details">
+				<div class="input-box">
+					<span class="details">Full name</span>
+					<input type="text" placeholder="Enter your Name" required> 
+				</div>
+				<div class="input-box">
+					<span class="details">Email</span>
+					<input type="email" placeholder="Enter your Email" id="email" name="email" required>
+				</div>
+				<div class="input-box">
+					<span class="details">Birthday</span>
+					<input type="date" id="birthday" name="birthday" required> 
+				</div>
+				<div class="input-box">
+					<span class="details">Age</span>
+					 <input type="number" id="quantity" name="quantity" min="1" max="99" placeholder="Enter your Age" required>
+				</div>
+				<div class="input-box">
+					<span class="details">Car Identity</span>
+					<input type="text" placeholder="Enter your Car's Identity" required> 
+				</div>
+				<div class="input-box">
+					<span class="details">Brand</span>
+					<input type="text" placeholder="Enter your Car's Brand" required> 
+				</div>
+				<div class="input-box">
+					<span class="details">Plate Number</span>
+					<input type="text" placeholder="Enter your Plate Identity" required> 
+				</div>
+				<div class="input-box">
+					<span class="details">Color</span>
+					<input type="color" id="favcolor" name="favcolor" required>
+				</div>
+				<div class="input-box">
+					<span class="details">Time of Visiting</span>
+					<input type="time" id="appt" name="appt" required>
+				</div>
+				<div class="input-box">
+					<span class="details">Date of Visiting</span>
+					<input type="date" id="birthday" name="birthday" required> 
+				</div>
+				<div class="custom-select" style="width:200px;">
+					<span class="details">Vaccine Brand</span>
+					<select>
+    <option value="pfizer">Pfizer</option>
+    <option value="astrazenica">Astrazenica</option>
+    <option value="janssen">Janssen</option>
+    <option value="coronavac">Coronavac</option>
+    <option value="moderna">Moderna</option>
+  </select>
+				</div>
+
+				<div class="input-box">
+					<span class="details">Add Any Kind of ID & Driver License</span>
+					<input type="file" id="myfile" name="myfile" required>
+					<input type="file" id="myfile" name="myfile" required>
+				</div>
+			</div>
+			<div class="gender-details">
+				<input type="radio" name="gender" id="dot-1">
+				<input type="radio" name="gender" id="dot-2">
+				<input type="radio" name="gender" id="dot-3">
+				<span class="gender-title">Gender</span>
+				<div class="category"> 
+					<label for="dot-1">
+						<span class="dot one"></span>
+						<span class="gender">Male</span>
+					</label>
+					<label for="dot-2">
+						<span class="dot two"></span>
+						<span class="gender">Female</span>
+					</label>
+					<label for="dot-3">
+						<span class="dot three"></span>
+						<span class="gender">Non-Binary</span>
+					</label>
+				</div>
+			</div>
+			<div class="physical-contact">
+				<input type="radio" name="physical" id="dot-4">
+				<input type="radio" name="physical" id="dot-5">
+				<span class="physical-title">Had Physical Contact with COVID Patient?</span>
+				<div class="category1"> 
+					<label for="dot-4">
+						<span class="dot four"></span>
+						<span class="physical">Yes</span>
+					</label>
+					<label for="dot-5">
+						<span class="dot five"></span>
+						<span class="physical">No</span>
+					</label>
+				</div>
+			</div>
+			<div class="covid-positive">
+				<input type="radio" name="positive" id="dot-6">
+				<input type="radio" name="positive" id="dot-7">
+				<input type="radio" name="positive" id="dot-8">
+				<span class="positive-title">Have been COVID Positive?</span>
+				<div class="category2"> 
+					<label for="dot-6">
+						<span class="dot six"></span>
+						<span class="gender">Yes</span>
+					</label>
+					<label for="dot-7">
+						<span class="dot seven"></span>
+						<span class="gender">No</span>
+					</label>
+					<label for="dot-8">
+						<span class="dot eight"></span>
+						<span class="gender">Maybe</span>
+					</label>
+				</div>
+			</div>		
+			<div class="button">
+				<input type="button" class="button_active" onclick="location.href='thankyou.html'" value="Submit">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+
+	
+

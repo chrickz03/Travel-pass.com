@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(42,58,74,0.95),rgba(42,58,74,0.95)), url(2.jpg) ;
+    font-family: sans-serif;
+}
+.container {
+    width: 1700px;
+    min-height: 500px;
+    background: #FFF;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #14c8a2;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+.container .box .imgBox img {
+    max-width: 100%;
+    transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+.container .box .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(0,0,0,0.8);
+    transform: scaleY(0); 
+    transition: transform .5s;
+}
+.container .box:hover .details {
+    transform: scaleY(1);
+}
+.container .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #14c8a2;
+}
+.container .box .details .content h2{
+    margin: 10px 0 0;
+    padding: 0;
+}
+.active{
+    margin-top: ;
+}
+ul{
+    float: left;
+    list-style-type: none; 
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    margin-right: 20px;
+}
+
+ul li a:hover{
+    background: #14c8a2;
+}
+
+ul li.active a{
+    color: #fff;
+}
+.Text h2{
+    text-align: center;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: bold;
+}

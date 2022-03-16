@@ -1,0 +1,259 @@
+@import url('"https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins' ,sans-serif;
+} 
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-image: linear-gradient(rgba(42,58,74,0.95),rgba(42,58,74,0.95)), url(2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.container{
+	max-width: 700px;
+	width: 100%;
+	background: linear-gradient(to bottom, #ffffff 0%, #009999 100%);
+	padding: 25px 30px;
+	border-radius: 5px;
+}
+.container .title{
+	font-size: 25px;
+	font-weight: 500;
+	font-weight: bold;
+	position: relative;
+	 text-align: center;
+}
+.container .title::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 650px;
+	background: linear-gradient(to bottom, #ffffff 0%, #009999 100%);
+
+}
+.container form .user-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+	margin-bottom: 15px;
+	width: calc(100% / 2 - 20px);
+}
+.user-details .custom-select .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.user-details .custom-select select{
+
+  position: relative;
+  font-family: Arial;
+  background: linear-gradient(to bottom, #ffffff 0%, #009999 100%);
+  padding: 8px 16px;
+  font-size: 25px;
+}
+.user-details .input-box .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+	font-weight: bold;
+
+}
+.user-details .input-box input{
+	height: 45px;
+	width:100%;	
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-weight: bold;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+	border-color: #9b59b6;
+}
+
+form .gender-details .gender-title{
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: bold;
+	color: #fff;
+}
+form .gender-details .category{
+	display: flex;
+	width: 80%;
+	margin: 14px 0;
+	justify-content: space-between;
+	color: #fff;
+}
+form .physical-contact .physical-title{
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: bold;
+	color: #fff;
+}
+form .physical-contact .category1{
+	display: flex;
+	width: 80%;
+	margin: 14px 0;
+	justify-content: space-between;
+	color: #fff;
+}
+form .covid-positive .positive-title{
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: bold;
+	color: #fff;
+}
+form .covid-positive .category2{
+	display: flex;
+	width: 80%;
+	margin: 14px 0;
+	justify-content: space-between;
+	color: #fff;
+}
+.gender-details .category label{
+	display: flex;
+	align-items: center;
+
+}
+.gender-details .category .dot{
+	height: 18px;
+	width: 18px;
+	background: #d9d9d9;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: 5px solid transparent;
+}
+.physical-contact .category1 label{
+	display: flex;
+	align-items: center;
+
+}
+.physical-contact .category1 .dot{
+	height: 18px;
+	width: 18px;
+	background: #d9d9d9;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: 5px solid transparent;
+}
+.covid-positive .category2 label{
+	display: flex;
+	align-items: center;
+
+}
+.covid-positive .category2 .dot{
+	height: 18px;
+	width: 18px;
+	background: #d9d9d9;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: 5px solid transparent;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{	
+	border-color: #d9d9d9;
+	background: #9b59b6;
+}
+#dot-4:checked ~ .category1 label .four,
+#dot-5:checked ~ .category1 label .five{
+	border-color: #d9d9d9;
+	background: #9b59b6;
+}
+#dot-6:checked ~ .category2 label .six,
+#dot-7:checked ~ .category2 label .seven,
+#dot-8:checked ~ .category2 label .eight{	
+	border-color: #d9d9d9;
+	background: #9b59b6;
+}
+form input[type="radio"]{
+	display: none;
+}
+form .button{
+	height: 45px;
+	margin: 45px 0;
+}
+form .button input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: black;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	font-weight: bold;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: linear-gradient(to bottom, #ffffff 0%, #009999 100%);
+}
+form .button input:hover{
+	background: linear-gradient(to bottom, #ffffff 0%, #009999 100%);
+}
+@media (max-width:585px){
+	.container{
+		max-width: 100%;
+	}
+	form .user-details .input-box{
+	margin-bottom: 20px 0 12px ;
+	width: 100%;
+}
+form .gender-details .category{
+	width: 100%; 
+}
+form .physical-contact .category1{
+	width: 100%; 
+}
+form .covid-positive .category2{
+	width: 100%; 
+}
+.container form .user-details{
+	max-height: 300px;
+	overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar{
+	width: 0;
+}
+}
+.active{
+	margin-top: ;
+}
+ul{
+    float: right;
+    list-style-type: none; 
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    margin-right: 20px;
+}
+
+ul li a:hover{
+    background: #14c8a2;;
+}
+
+ul li.active a{
+    color: #fff;
